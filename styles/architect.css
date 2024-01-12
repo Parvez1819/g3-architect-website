@@ -14,6 +14,10 @@
 
 }
 
+.light-gray-text {
+    color: #727272;
+}
+
 .section-title {
     color: #131313;
     font-size: 2.8rem;
@@ -130,6 +134,54 @@ main {
     font-size: 1rem;
 }
 
+/* features section style */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 80px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 /* facts section style */
 .facts-description {
     color: #727272;
@@ -184,6 +236,20 @@ main {
     align-items: center;
 }
 
+/* footer style */
+footer {
+    max-width: 1440px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin: 100px auto;
+}
+footer p{
+    padding: 40px 410px;
+    color: #424242;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 /* responsive media queries */
 /* Mobile Devices */
 @media screen and (max-width:576px) {
@@ -194,13 +260,21 @@ main {
     nav,
     .teams-container,
     .facts-card-container,
-    .sponsor-img-container {
+    .sponsor-img-container,
+    .features {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin: 0%;
     }
 
     .sponsor-img-container img {
         width: 165px;
         height: 50px;
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
@@ -217,6 +291,9 @@ main {
     .facts-card-container {
         gap: 20px;
     }
+    footer p{
+        padding: 40px;
+    }
 }
 
 /* tablet or medium devices */
@@ -231,8 +308,12 @@ main {
     }
 
     nav,
-    .teams-container ,
-    .sponsor-img-container{
+    .teams-container,
+    .sponsor-img-container,
+    .features {
         flex-direction: column;
+    }
+    footer p{
+        padding: 40px;
     }
 }
